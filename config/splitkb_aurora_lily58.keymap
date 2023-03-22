@@ -10,19 +10,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
-  behaviors {
-    bspdel: backspace_del {
-      compatible = "zmk,behavior-mod-morph";
-      label = "BACKSPACE_DEL";
-      #binding-cells = <0>;
-      bindings = <&kp BSPC>, <&kp DEL>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-  };
-};
-
-
-/ {
   keymap {
     compatible = "zmk,keymap";
 
