@@ -8,7 +8,7 @@
       quick-tap-ms = <0>;
       require-prior-idle-ms = <125>;
       bindings = <&kp>, <&kp>;
-     };
+    };
 
     sdel: backspace_delete {
       compatible = "zmk,behavior-mod-morph";
