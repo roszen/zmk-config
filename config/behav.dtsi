@@ -1,8 +1,12 @@
+#define TAP_MS 280
+#define QT_MS 175
+#define RPI_MS 150
 
 &lt { // layer-tap config
   flavor = "balanced";
-  tapping-term-ms = <200>;
-  quick-tap-ms = <175>;
+  tapping-term-ms = <TAP_MS>;
+  quick-tap-ms = <QT_MS>;
+  require-prior-idle-ms = <RPI_MS>;
 };
 
 / {
@@ -11,9 +15,9 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "balanced";
-      tapping-term-ms = <280>;
-      quick-tap-ms = <175>;
-      require-prior-idle-ms = <150>;
+      tapping-term-ms = <TAP_MS>;
+      quick-tap-ms = <QT_MS>;
+      require-prior-idle-ms = <RPI_MS>;
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <25 26 27 28>;
       hold-trigger-on-release;
@@ -23,19 +27,29 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "balanced";
-      tapping-term-ms = <280>;
-      quick-tap-ms = <175>;
-      require-prior-idle-ms = <150>;
+      tapping-term-ms = <TAP_MS>;
+      quick-tap-ms = <QT_MS>;
+      require-prior-idle-ms = <RPI_MS>;
       bindings = <&kp>, <&kp>;
       hold-trigger-key-positions = <31 32 33 34>;
       hold-trigger-on-release;
     };
 
-    bspd: backspace_delete {
+    bspc_del: backspace_delete {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
       bindings = <&kp BSPC>, <&kp DEL>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    lt_bspc: layer_tap_bspc_del {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      bindings = <&mo>, <&bspc_del>;
+      tapping-term-ms = <TAP_MS>;
+      quick-tap-ms = <QT_MS>;
+      require-prior-idle-ms = <RPI_MS>;
     };
   };
 };
