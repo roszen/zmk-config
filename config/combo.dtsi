@@ -4,7 +4,7 @@
 
     combo_esc {
       timeout-ms = <50>;
-      key-positions = <31 32>; // j k
+      key-positions = <14 15 16>; // W E R
       bindings = <&kp ESC>;
     };
 
