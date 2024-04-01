@@ -1,4 +1,4 @@
-&lt { // layer-tap config
+&lt {
   flavor = "balanced";
   tapping-term-ms = <280>;
   quick-tap-ms = <175>;
@@ -64,11 +64,11 @@
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    alt_cw: alt_capsword {
+    shft_cw: shift_capsword {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp LALT>, <&caps_word>;
+      bindings = <&kp LSHFT>, <&caps_word>;
     };
   };
 };
