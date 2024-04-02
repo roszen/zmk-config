@@ -15,37 +15,37 @@
 
     combo_lbrc {
       timeout-ms = <50>;
-      key-positions = <15 16>; // ER
+      key-positions = <14 15 16>; // WER
       bindings = <&kp LBRC>;
     };
 
     combo_lpar {
       timeout-ms = <50>;
-      key-positions = <27 28>; // DF
+      key-positions = <26 27 28>; // SDF
       bindings = <&kp LPAR>;
     };
 
     combo_lbkt {
       timeout-ms = <50>;
-      key-positions = <39 40>; // CV
+      key-positions = <38 39 40>; // XCV
       bindings = <&kp LBKT>;
     };
 
     combo_rbrc {
       timeout-ms = <50>;
-      key-positions = <19 20>; // UI
+      key-positions = <19 20 21>; // UIO
       bindings = <&kp RBRC>;
     };
 
     combo_rpar {
       timeout-ms = <50>;
-      key-positions = <31 32>; // JK
+      key-positions = <31 32 33>; // JKL
       bindings = <&kp RPAR>;
     };
 
     combo_rbkt {
       timeout-ms = <50>;
-      key-positions = <45 46>; // M,
+      key-positions = <45 46 47>; // M,.
       bindings = <&kp RBKT>;
     };
 
@@ -55,8 +55,20 @@
       bindings = <&kp UNDER>;
     };
 
-    combo_eql {
+    combo_and {
       timeout-ms = <50>;
+      key-positions = <27 32>; // DK
+      bindings = <&kp AMPS>;
+    };
+
+    combo_or {
+      timeout-ms = <50>;
+      key-positions = <26 33>; // SL
+      bindings = <&kp PIPE>;
+    };
+
+    combo_eql {
+      timeout-ms = <75>;
       key-positions = <25 34>; // A;
       bindings = <&kp EQUAL>;
     };
