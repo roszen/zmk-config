@@ -25,10 +25,10 @@
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    and_or: and_or {
+    spc_morph: space_morph {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp AMPS>, <&kp PIPE>;
+      bindings = <&kp SPACE>, <&dot_spc>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
@@ -53,32 +53,25 @@
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    lr_par: left_right_parenthesis {
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      bindings = <&kp LPAR>, <&kp RPAR>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    lr_brc: left_right_brace {
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      bindings = <&kp LBRC>, <&kp RBRC>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    lr_brk: left_right_bracket {
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      bindings = <&kp LBKT>, <&kp RBKT>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
     shft_cw: shift_capsword {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&kp LSHFT>, <&caps_word>;
+    };
+
+    n9_grave: n9_grave {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp N9>, <&kp GRAVE>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    n7_tilde: n7_tilde {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp N7>, <&kp TILDE>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
     };
   };
 };

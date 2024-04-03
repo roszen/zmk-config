@@ -13,6 +13,12 @@
   combos {
     compatible = "zmk,combos";
 
+    combo_tab {
+      timeout-ms = <75>;
+      key-positions = <53 54>; // SPC BSPC
+      bindings = <&kp TAB>;
+    };
+
     combo_lbrc {
       timeout-ms = <50>;
       key-positions = <14 15 16>; // WER
@@ -71,6 +77,12 @@
       timeout-ms = <75>;
       key-positions = <25 34>; // A;
       bindings = <&kp EQUAL>;
+    };
+
+    combo_dsh {
+      timeout-ms = <75>;
+      key-positions = <37 48>; // Z/
+      bindings = <&kp MINUS>;
     };
   };
 };
