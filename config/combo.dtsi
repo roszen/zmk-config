@@ -22,13 +22,13 @@
     combo_lbrc {
       timeout-ms = <50>;
       key-positions = <14 15 16>; // WER
-      bindings = <&kp LBRC>;
+      bindings = <&kp LPAR>;
     };
 
     combo_lpar {
       timeout-ms = <50>;
       key-positions = <26 27 28>; // SDF
-      bindings = <&kp LPAR>;
+      bindings = <&kp LBRC>;
     };
 
     combo_lbkt {
@@ -40,13 +40,13 @@
     combo_rbrc {
       timeout-ms = <50>;
       key-positions = <19 20 21>; // UIO
-      bindings = <&kp RBRC>;
+      bindings = <&kp RPAR>;
     };
 
     combo_rpar {
       timeout-ms = <50>;
       key-positions = <31 32 33>; // JKL
-      bindings = <&kp RPAR>;
+      bindings = <&kp RBRC>;
     };
 
     combo_rbkt {
