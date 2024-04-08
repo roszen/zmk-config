@@ -35,7 +35,7 @@
     eql_usc: equal_underscore {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp KP_EQUAL>, <&kp UNDER>;
+      bindings = <&kp EQUAL>, <&kp UNDER>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
