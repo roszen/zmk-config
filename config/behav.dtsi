@@ -32,13 +32,6 @@
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    eql_usc: equal_underscore {
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      bindings = <&kp EQUAL>, <&kp UNDER>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
     fb_slh: forward_backword_slash {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;

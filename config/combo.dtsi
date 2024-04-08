@@ -73,13 +73,13 @@
       bindings = <&kp PIPE>;
     };
 
-    combo_eql {
+    combo_min {
       timeout-ms = <75>;
       key-positions = <25 34>; // A;
       bindings = <&kp MINUS>;
     };
 
-    combo_dsh {
+    combo_eql {
       timeout-ms = <50>;
       key-positions = <20 21>; // IO
       bindings = <&kp EQUAL>;
