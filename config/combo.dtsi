@@ -80,8 +80,8 @@
     };
 
     combo_dsh {
-      timeout-ms = <75>;
-      key-positions = <37 48>; // Z/
+      timeout-ms = <50>;
+      key-positions = <20 21>; // IO
       bindings = <&kp EQUAL>;
     };
   };
